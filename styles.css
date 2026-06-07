@@ -75,3 +75,22 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
 .all-projects-page .project-grid{
   margin-top:20px;
 }
+
+.big-date{
+    font-size:20px;
+    font-weight:700;
+}
+
+.company-meta{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:20px;
+    font-weight:700;
+}
+
+.company-logo{
+    width:36px;
+    height:36px;
+    object-fit:contain;
+}
