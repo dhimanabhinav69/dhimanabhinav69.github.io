@@ -6,7 +6,7 @@
   <title>Abhinav Dhiman — Analyst Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,152 +16,220 @@
   <header class="site-header" id="header">
     <a href="#home" class="brand" aria-label="Abhinav Dhiman home">
       <span class="brand-mark">A</span>
-      <span>abhinav</span>
+      <span>portfolio</span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <a href="#home" class="active">home</a>
-      <a href="#projects">projects</a>
-      <a href="#experience">work experience</a>
+      <a href="#experience">experience</a>
+      <a href="#education">education</a>
       <a href="#skills">skills</a>
-      <a href="#contact">contact</a>
+      <a href="#projects">work</a>
+      <a href="#beyond">activities</a>
+      <a href="#contact">reach out</a>
     </nav>
   </header>
 
   <main>
+    <!-- 1. Header -->
     <section class="hero section" id="home">
       <div class="matrix-bg" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">// analyst.init</p>
-          <p class="stats-line"><span>3 years</span> · <span>24 dashboards</span> · <span>12 projects shipped</span></p>
-          <h1>Hello, I'm<br>Abhinav Dhiman</h1>
+          <p class="eyebrow">// system.init</p>
+          <p class="stats-line"><span>6 months</span> · <span>8 dashboards</span> · <span>5 projects</span></p>
+          <h1>Hello, I'm<br>Abhinav<br>Dhiman</h1>
           <h2>Data & Business Analyst</h2>
-          <p class="lead">I turn scattered data into clear decisions. I build dashboards, analyze performance, automate reporting, and help teams understand what is really happening.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">See my projects</a>
-            <a class="btn ghost" href="#contact">Reach out</a>
+          <p class="lead">I turn complex, messy data into clear, actionable decisions. I find the signal in the noise, build models that stakeholders trust, and make numbers tell stories that move organisations forward.</p>
+          <div class="hero-actions three-actions">
+            <a class="btn primary" href="#experience">Work Experience</a>
+            <a class="btn secondary" href="#projects">Projects</a>
+            <a class="btn tertiary" href="#contact">Contact</a>
           </div>
         </div>
-        <div class="portrait-card reveal" aria-label="Profile visual">
-          <div class="portrait-inner">
-            <div class="portrait-placeholder">
-              <span>AD</span>
-              <small>Analyst</small>
-            </div>
+        <div class="photo-frame reveal" aria-label="Profile photo placeholder">
+          <div class="photo-box">
+            <span class="photo-icon">♟</span>
+            <small>[ your photo ]</small>
           </div>
         </div>
       </div>
-      <a class="scroll-cue" href="#projects">0x01 // projects<span>↓</span></a>
+      <a class="scroll-cue" href="#experience">0x01 // experience<span>↓</span></a>
     </section>
 
-    <section class="section problem" id="projects">
-      <div class="matrix-bg dense" aria-hidden="true"></div>
+    <!-- 2. Work History -->
+    <section class="section work-history" id="experience">
       <div class="container">
+        <span class="section-number">02</span>
         <div class="section-head reveal">
-          <span class="section-number">02</span>
-          <p class="eyebrow">// section.projects</p>
-          <h2>Selected Projects</h2>
-          <p>Analytical work focused on business clarity, reporting speed, and measurable outcomes.</p>
+          <p class="eyebrow">// section.experience</p>
+          <h2>Work History</h2>
         </div>
-        <div class="cards-grid project-grid">
-          <article class="card project-card reveal">
-            <div class="card-top"><span>2026</span><small>[01]</small></div>
-            <h3>Sales Performance Dashboard</h3>
-            <p>Built a Power BI dashboard to track revenue, product performance, conversion trends, and regional sales insights.</p>
-            <div class="tags"><span>Power BI</span><span>DAX</span><span>Sales Analytics</span></div>
-            <a href="#contact">View case study →</a>
-          </article>
-          <article class="card project-card reveal">
-            <div class="card-top"><span>2025</span><small>[02]</small></div>
-            <h3>Customer Churn Analysis</h3>
-            <p>Analyzed behavior patterns, retention risk, and churn drivers to support customer success and revenue protection.</p>
-            <div class="tags"><span>SQL</span><span>Python</span><span>Retention</span></div>
-            <a href="#contact">View case study →</a>
-          </article>
-          <article class="card project-card reveal">
-            <div class="card-top"><span>2025</span><small>[03]</small></div>
-            <h3>Automated KPI Reporting</h3>
-            <p>Reduced manual reporting time by creating repeatable weekly reporting flows and clean executive summaries.</p>
-            <div class="tags"><span>Excel</span><span>Automation</span><span>Reporting</span></div>
-            <a href="#contact">View case study →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about" id="experience">
-      <div class="container boxed reveal">
-        <span class="section-number">03</span>
-        <p class="eyebrow">// section.work_experience</p>
-        <h2>Work Experience</h2>
-        <div class="experience-layout">
-          <div>
-            <p class="big-copy">I help teams move from raw numbers to confident action. My work combines business understanding, clean data models, and simple visual storytelling.</p>
-            <a class="btn ghost" href="#contact">Discuss a role →</a>
-          </div>
-          <div class="timeline">
-            <article>
-              <span>2024 — Present</span>
+        <div class="history-list reveal">
+          <article class="history-item">
+            <div class="history-date"><span>2025 —<br>Present</span><i></i></div>
+            <div class="history-copy">
               <h3>Business Analyst</h3>
-              <p>Dashboard development, KPI tracking, stakeholder reporting, and business performance analysis.</p>
-            </article>
-            <article>
-              <span>2023 — 2024</span>
+              <p class="meta">Company Name · Full-time</p>
+              <p>Led cross-functional analysis initiatives, built automated reporting dashboards, tracked business KPIs weekly, and helped stakeholders convert raw data into practical decisions.</p>
+              <div class="tags"><span>SQL</span><span>Tableau</span><span>Python</span><span>Stakeholder Reporting</span></div>
+            </div>
+          </article>
+          <article class="history-item">
+            <div class="history-date"><span>2024 —<br>2025</span><i></i></div>
+            <div class="history-copy">
+              <h3>Junior Analyst</h3>
+              <p class="meta">Previous Company · Full-time</p>
+              <p>Supported senior analysts in market research, competitive benchmarking, Excel-based reporting frameworks, and quarterly board presentation preparation.</p>
+              <div class="tags"><span>Excel</span><span>PowerPoint</span><span>Market Research</span></div>
+            </div>
+          </article>
+          <article class="history-item">
+            <div class="history-date"><span>Summer<br>2024</span><i></i></div>
+            <div class="history-copy">
               <h3>Data Analyst Intern</h3>
-              <p>Cleaned datasets, wrote SQL queries, prepared Excel reports, and supported weekly operations reviews.</p>
-            </article>
+              <p class="meta">Internship Company · Internship</p>
+              <p>Performed data cleaning and exploratory analysis on customer datasets. Created dashboard visuals that revealed revenue opportunities and improved reporting quality.</p>
+              <div class="tags"><span>Tableau</span><span>Data Cleaning</span><span>EDA</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Education -->
+    <section class="section education" id="education">
+      <div class="container">
+        <span class="section-number">03</span>
+        <div class="section-head reveal">
+          <p class="eyebrow">// section.education</p>
+          <h2>Education</h2>
+        </div>
+        <div class="education-grid reveal">
+          <article><small>[01]</small><h3>B.Sc. Economics / Business / Statistics</h3><p>University Name</p><span>2021 — 2024 · GPA: X.X / 4.0</span></article>
+          <article><small>[02]</small><h3>Google Data Analytics Certificate</h3><p>Coursera · Google</p><span>2024</span></article>
+          <article><small>[03]</small><h3>Tableau Desktop Specialist</h3><p>Tableau / Salesforce</p><span>2025</span></article>
+          <article><small>[04]</small><h3>SQL for Data Science</h3><p>Coursera · UC Davis</p><span>2024</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Skills -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <span class="section-number">04</span>
+        <div class="section-head reveal">
+          <p class="eyebrow">// section.skills</p>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-grid reveal">
+          <div class="skill-group">
+            <h3>// analytics</h3>
+            <div class="skill-row"><span>Excel / Sheets</span><b>95%</b><i style="--w:95%"></i></div>
+            <div class="skill-row"><span>SQL</span><b>85%</b><i style="--w:85%"></i></div>
+            <div class="skill-row"><span>Python (Pandas / NumPy)</span><b>75%</b><i style="--w:75%"></i></div>
+            <div class="skill-row"><span>Statistics & Modelling</span><b>82%</b><i style="--w:82%"></i></div>
+          </div>
+          <div class="skill-group">
+            <h3>// visualisation</h3>
+            <div class="skill-row"><span>Tableau</span><b>90%</b><i style="--w:90%"></i></div>
+            <div class="skill-row"><span>Power BI</span><b>80%</b><i style="--w:80%"></i></div>
+            <div class="skill-row"><span>Matplotlib / Seaborn</span><b>70%</b><i style="--w:70%"></i></div>
+            <div class="skill-row"><span>Google Looker</span><b>65%</b><i style="--w:65%"></i></div>
+          </div>
+          <div class="skill-group">
+            <h3>// business</h3>
+            <div class="skill-row"><span>Financial Modelling</span><b>85%</b><i style="--w:85%"></i></div>
+            <div class="skill-row"><span>Market Research</span><b>88%</b><i style="--w:88%"></i></div>
+            <div class="skill-row"><span>Stakeholder Reporting</span><b>92%</b><i style="--w:92%"></i></div>
+            <div class="skill-row"><span>Project Management</span><b>78%</b><i style="--w:78%"></i></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section work" id="skills">
+    <!-- 5. Projects -->
+    <section class="section projects" id="projects">
       <div class="container">
+        <span class="section-number">05</span>
         <div class="section-head reveal">
-          <span class="section-number">04</span>
-          <p class="eyebrow">// section.skills</p>
-          <h2>Core Skills</h2>
+          <p class="eyebrow">// section.work</p>
+          <h2>Featured Projects</h2>
         </div>
-        <div class="cards-grid skill-grid">
-          <article class="card skill-card reveal">
-            <i></i><h3>Data Analysis</h3><p>Cleaning, exploration, KPI definition, trend analysis, and business insight generation.</p>
+        <div class="project-grid reveal">
+          <article class="project-card">
+            <div class="visual"><span>[ project visual ]</span></div>
+            <div class="project-info"><span class="year">2026</span><span class="role">Data Analysis</span><h3>Revenue Forecasting Model</h3><p>Built a dynamic forecasting model in Python + Excel predicting quarterly revenue with high accuracy for planning cycles.</p><div class="tags"><span>Python</span><span>Excel</span><span>Forecasting</span></div><a href="#contact">View case study →</a></div>
           </article>
-          <article class="card skill-card reveal">
-            <i></i><h3>SQL & Databases</h3><p>Joins, aggregations, data validation, query optimization, and reporting-ready datasets.</p>
+          <article class="project-card">
+            <div class="visual"><span>[ project visual ]</span></div>
+            <div class="project-info"><span class="year">2025</span><span class="role">Dashboard</span><h3>KPI Operations Dashboard</h3><p>Real-time Tableau dashboard tracking department KPIs, reporting health, and operations bottlenecks.</p><div class="tags"><span>Tableau</span><span>SQL</span><span>Automation</span></div><a href="#contact">View case study →</a></div>
           </article>
-          <article class="card skill-card reveal">
-            <i></i><h3>Dashboards</h3><p>Power BI, Excel dashboards, executive summaries, and visual storytelling for decisions.</p>
+          <article class="project-card">
+            <div class="visual"><span>[ project visual ]</span></div>
+            <div class="project-info"><span class="year">2025</span><span class="role">Market Research</span><h3>Competitive Landscape Study</h3><p>End-to-end market analysis across competitors, delivering insights that supported product positioning.</p><div class="tags"><span>Research</span><span>Excel</span><span>Strategy</span></div><a href="#contact">View case study →</a></div>
           </article>
-          <article class="card skill-card reveal">
-            <i></i><h3>Business Reporting</h3><p>Weekly reports, variance analysis, forecasting support, and stakeholder communication.</p>
-          </article>
+        </div>
+        <div class="center reveal"><a class="btn primary" href="#contact">View all projects →</a></div>
+      </div>
+    </section>
+
+    <!-- 6. Beyond Work -->
+    <section class="section beyond" id="beyond">
+      <div class="container">
+        <span class="section-number">06</span>
+        <div class="section-head reveal">
+          <p class="eyebrow">// section.co_curriculars</p>
+          <h2>Beyond Work</h2>
+        </div>
+        <div class="beyond-grid reveal">
+          <article><i class="blue"></i><h3>Finance & Analytics Club</h3><p class="meta">University Name · President</p><p>Led a student analytics club, organised case events, and hosted speakers from business and finance teams.</p></article>
+          <article><i class="orange"></i><h3>National Case Competition</h3><p class="meta">Competition Name · Finalist</p><p>Reached national finals and presented a data-backed business strategy to senior industry judges.</p></article>
+          <article><i class="black"></i><h3>Volunteer Data Analyst</h3><p class="meta">Local NGO · Pro Bono</p><p>Helped optimise resource allocation and improve program impact tracking through clean reporting.</p></article>
+          <article><i class="blue"></i><h3>Data & Decisions Newsletter</h3><p class="meta">Personal Project · Author</p><p>Bi-weekly notes breaking down data stories in business and economics for readers.</p></article>
         </div>
       </div>
     </section>
 
+    <!-- 7. Reach Out -->
     <section class="section contact" id="contact">
-      <div class="container contact-wrap reveal">
-        <span class="section-number">05</span>
-        <div class="plus">✚</div>
+      <div class="container contact-layout reveal">
+        <span class="section-number">07</span>
         <p class="eyebrow">// section.contact</p>
-        <h2>Let's Talk</h2>
-        <p>I am open to analyst roles, freelance dashboard work, and data reporting projects.</p>
-        <div class="availability">● available for selected projects</div>
-        <a class="btn primary large" href="mailto:abhinavdhiman@example.com">Contact Abhinav</a>
+        <h2>Reach Out</h2>
+        <div class="availability">● Open to opportunities · available from [Month] 2026</div>
+        <p class="contact-lead">I'm open to analyst roles, freelance projects, and interesting collaborations. If you have a problem that needs structured thinking and clean data — let's talk.</p>
+        <form class="contact-form" action="mailto:abhinavdhiman@example.com" method="post" enctype="text/plain">
+          <label>name<input type="text" name="name" placeholder="Your name"></label>
+          <label>email<input type="email" name="email" placeholder="you@email.com"></label>
+          <label class="wide">subject<input type="text" name="subject" placeholder="What's this about?"></label>
+          <label class="wide">message<textarea name="message" placeholder="Tell me about your project or opportunity..."></textarea></label>
+          <button class="btn primary" type="submit">Send message →</button>
+        </form>
+        <div class="contact-meta">
+          <div><strong>FIND ME ON</strong><a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Substack</a></div>
+          <div><strong>EMAIL</strong><a href="mailto:abhinavdhiman@example.com">hello@yourname.com</a></div>
+          <div><strong>BASED IN</strong><span>Your City, Country</span></div>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- 8. Footer -->
   <footer class="footer" id="footer">
     <div class="footer-bg" aria-hidden="true"></div>
     <div class="footer-inner">
       <h2>ABHINAV DHIMAN</h2>
-      <p>built with data. maintained with clarity.</p>
-      <div class="footer-links">
-        <div><a href="#home">home</a><a href="#projects">projects</a><a href="#contact">contact</a></div>
-        <div><a href="#skills">skills</a><a href="#experience">experience</a><a href="mailto:abhinavdhiman@example.com">email</a></div>
+      <p>// built with intention. driven by data.</p>
+      <div class="footer-nav">
+        <a href="#home">home</a>
+        <a href="#experience">experience</a>
+        <a href="#education">education</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">work</a>
+        <a href="#beyond">activities</a>
+        <a href="#contact">contact</a>
       </div>
-      <small>Made for Abhinav Dhiman // analyst.portfolio.2026</small>
+      <small>© 2026 · Abhinav Dhiman · All rights reserved <em>// portfolio.2026</em></small>
     </div>
   </footer>
 
