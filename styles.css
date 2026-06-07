@@ -30,7 +30,7 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
 /* Fix oversized section numbers so they sit to the right, not over content */
 .section-head{position:relative;overflow:visible;}
 .section-head .section-number{
-  right:-220px;
+  right:-450px;
   top:8px;
   z-index:0;
   pointer-events:none;
@@ -42,7 +42,7 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
 .section.contact{position:relative;}
 .contact-layout .section-number{display:block;}
 .section.contact .section-number{
-  right:100%;
+  right:-8%;
   top:105px;
   z-index:0;
   pointer-events:none;
