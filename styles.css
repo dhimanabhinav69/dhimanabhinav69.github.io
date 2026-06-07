@@ -25,3 +25,36 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
   color:var(--blue);
   text-decoration:underline;
 }
+
+
+/* Fix oversized section numbers so they sit to the right, not over content */
+.section-head{position:relative;overflow:visible;}
+.section-head .section-number{
+  right:-220px;
+  top:8px;
+  z-index:0;
+  pointer-events:none;
+}
+.section-head > *:not(.section-number){
+  position:relative;
+  z-index:1;
+}
+.section.contact{position:relative;}
+.contact-layout .section-number{display:block;}
+.section.contact .section-number{
+  right:2%;
+  top:105px;
+  z-index:0;
+  pointer-events:none;
+}
+.contact-layout > *:not(.section-number){
+  position:relative;
+  z-index:1;
+}
+@media(max-width:980px){
+  .section-head .section-number,
+  .section.contact .section-number{
+    right:6%;
+    top:82px;
+  }
+}
