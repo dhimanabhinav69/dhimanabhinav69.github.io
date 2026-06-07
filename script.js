@@ -34,3 +34,11 @@ function updateScrollState(){
 }
 window.addEventListener('scroll', updateScrollState, { passive:true });
 updateScrollState();
+
+
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', () => {
+    setTimeout(() => contactForm.reset(), 800);
+  });
+}
