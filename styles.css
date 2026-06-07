@@ -94,3 +94,10 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
     height:36px;
     object-fit:contain;
 }
+
+.profile-photo{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:2px;
+}
