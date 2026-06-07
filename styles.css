@@ -12,13 +12,13 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
 .nav-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:700 12px var(--mono);letter-spacing:.18em;color:#444;white-space:nowrap;text-transform:uppercase;pointer-events:none}.hero h1,.section h2,.footer h2{text-shadow:none!important}.three-actions{align-items:flex-start}.action-stack{display:flex;flex-direction:column;align-items:flex-start;gap:12px}.btn.tertiary.underlined{height:auto;padding:0 0 4px;border:0;border-bottom:2px solid var(--blue);color:var(--blue);background:transparent}.btn.tertiary.underlined:before{display:none}.btn.tertiary.underlined:hover{box-shadow:none;transform:translateY(-1px);border-color:var(--blue)}.contact>.section-number{right:9%;top:105px}.contact-layout .section-number{display:none}
 @media(max-width:980px){.nav-center{display:none}.action-stack{width:100%}.action-stack .btn.primary{width:max-content}}
 
-
-/* Contact link updates */
+/* Contact link updates only */
 .contact-meta .contact-link{
   color:#333;
   text-decoration:none;
   text-underline-offset:4px;
   transition:color .2s ease;
+  overflow-wrap:anywhere;
 }
 .contact-meta .contact-link:hover,
 .contact-meta .contact-link:focus-visible{
