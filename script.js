@@ -42,3 +42,4 @@ if (contactForm) {
     setTimeout(() => contactForm.reset(), 800);
   });
 }
+

@@ -65,3 +65,13 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
  li{
   margin-bottom: 5px;
  }
+
+ .all-projects-page{
+  padding-top:120px;
+}
+.all-projects-page .section-head{
+  margin-bottom:60px;
+}
+.all-projects-page .project-grid{
+  margin-top:20px;
+}
