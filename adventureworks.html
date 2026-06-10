@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdventureWorks Case Study — Abhinav Dhiman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="case-study-page">
+  <div class="cursor" aria-hidden="true"><span></span></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a href="index.html#home" class="brand" aria-label="Abhinav Dhiman home">
+      <span class="brand-mark">▶</span>
+      <span>portfolio</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html#home">home</a>
+      <a href="index.html#experience">experience</a>
+      <a href="index.html#education">education</a>
+      <a href="index.html#skills">skills</a>
+      <a href="index.html#work" class="active">work</a>
+      <a href="index.html#contact">reach out</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero section" id="overview">
+      <div class="matrix-bg" aria-hidden="true"></div>
+      <div class="container case-hero-grid">
+        <div class="reveal">
+          <div class="crumb"><a href="projects.html">← all projects</a> / case study 01</div>
+          <div class="case-kicker"><span>AdventureWorks</span><span>Sales Analytics</span><span>BI Dashboard</span></div>
+          <h1>Sales Performance Dashboard</h1>
+          <p class="case-subtitle">A portfolio-ready analytics case study showing how raw sales, product, customer, and territory data can be turned into an executive dashboard for revenue monitoring, product mix decisions, and regional sales planning.</p>
+          <div class="case-actions">
+            <a class="btn primary" href="#dashboard">View dashboard story</a>
+            <a class="btn secondary" href="#process">See analysis flow</a>
+          </div>
+          <div class="code-strip">
+            <span>SQL model</span><span>Power BI / Excel</span><span>KPI storytelling</span><span>Business recommendations</span>
+          </div>
+        </div>
+        <aside class="case-side-panel reveal">
+          <div class="case-metric-hero"><b>01</b><span>single-page deck style case study</span></div>
+          <div class="case-metric-hero"><b>05</b><span>business questions translated into dashboard sections</span></div>
+          <div class="case-metric-hero"><b>08+</b><span>KPIs across revenue, customers, products, and territories</span></div>
+        </aside>
+      </div>
+      <a class="scroll-cue" href="#summary">↘ 0x01 // executive summary<span>────</span></a>
+    </section>
+
+    <section class="case-section" id="summary">
+      <div class="container">
+        <p class="slide-label reveal">slide 01 / executive summary</p>
+        <div class="deck-grid">
+          <article class="deck-card featured reveal">
+            <span class="mini-label">the story</span>
+            <h2>From transaction data to boardroom clarity.</h2>
+            <p>The project frames AdventureWorks as a sales leadership problem: leaders need a clean way to monitor revenue performance, understand what is driving growth, and quickly spot categories, regions, or customer segments that need attention.</p>
+          </article>
+          <article class="deck-card reveal">
+            <span class="mini-label">what the page communicates</span>
+            <h3>Project objective</h3>
+            <p>Build a dashboard narrative that helps a stakeholder answer: where are we growing, which products are strongest, which regions need support, and what actions should the business take next?</p>
+            <ul>
+              <li>Convert raw tables into a reusable analytics model.</li>
+              <li>Create KPI views for sales, customers, territories, and products.</li>
+              <li>Translate trends into clear business recommendations.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="stat-grid reveal">
+          <div class="stat-card"><b>Revenue</b><span>primary performance metric</span></div>
+          <div class="stat-card"><b>Orders</b><span>demand and volume tracking</span></div>
+          <div class="stat-card"><b>AOV</b><span>basket-size quality signal</span></div>
+          <div class="stat-card"><b>YoY</b><span>growth direction by period</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="dashboard">
+      <div class="container">
+        <p class="slide-label reveal">slide 02 / dashboard snapshot</p>
+        <h2 class="reveal">Designed like an executive sales cockpit.</h2>
+        <div class="dashboard-frame reveal" aria-label="AdventureWorks dashboard visual mockup">
+          <div class="dash-top">
+            <div>
+              <span>// adventureworks.sales_performance</span>
+              <h3>Executive Overview</h3>
+            </div>
+            <span>status: stakeholder-ready</span>
+          </div>
+          <div class="dash-kpis">
+            <div><b>$29M</b><small>sample revenue view</small></div>
+            <div><b>25K</b><small>sample orders view</small></div>
+            <div><b>+12%</b><small>growth signal view</small></div>
+          </div>
+          <div class="dash-body">
+            <div class="chart-panel">
+              <div class="chart-title">monthly revenue trend</div>
+              <div class="bars"><i style="height:42%"></i><i style="height:55%"></i><i style="height:38%"></i><i style="height:69%"></i><i style="height:63%"></i><i style="height:78%"></i><i style="height:70%"></i><i style="height:86%"></i><i style="height:74%"></i><i style="height:92%"></i></div>
+            </div>
+            <div class="chart-panel">
+              <div class="chart-title">category contribution</div>
+              <div class="donut"></div>
+              <div class="legend">
+                <span><i></i>Bikes — core revenue engine</span>
+                <span><i></i>Accessories — add-on opportunity</span>
+                <span><i></i>Clothing / components — margin watchlist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="case-note reveal">Note: the visual above is a CSS mockup created for portfolio presentation. Replace the sample values with your final dashboard numbers if you want the page to mirror your exact analysis.</p>
+      </div>
+    </section>
+
+    <section class="case-section" id="problem">
+      <div class="container two-col-copy">
+        <div class="reveal">
+          <p class="slide-label">slide 03 / business problem</p>
+          <h2>The stakeholder problem</h2>
+        </div>
+        <div class="reveal">
+          <p>Sales performance was spread across multiple dimensions: products, customers, geography, dates, and order channels. Without a structured dashboard, a stakeholder would spend too much time switching between raw tables and manually comparing slices of performance.</p>
+          <ul class="question-list">
+            <li>Which product categories are contributing most to sales?</li>
+            <li>Which territories show growth, stagnation, or underperformance?</li>
+            <li>How are customers behaving across order volume and average order value?</li>
+            <li>Which monthly patterns should sales leadership prepare for?</li>
+            <li>Where should the business focus next: acquisition, product mix, or regional execution?</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="process">
+      <div class="container">
+        <p class="slide-label reveal">slide 04 / analytical approach</p>
+        <h2 class="reveal">A clean pipeline from raw data to decision-ready insight.</h2>
+        <div class="process-grid reveal">
+          <article class="process-step"><small>01</small><h3>Understand</h3><p>Defined the core business questions before choosing charts, so the dashboard would answer decision needs instead of just displaying data.</p></article>
+          <article class="process-step"><small>02</small><h3>Model</h3><p>Structured sales, product, customer, territory, and date tables into a simple star-schema style reporting model.</p></article>
+          <article class="process-step"><small>03</small><h3>Measure</h3><p>Built KPI logic for revenue, orders, average order value, customer count, growth, and category contribution.</p></article>
+          <article class="process-step"><small>04</small><h3>Visualise</h3><p>Created executive, product, region, and customer views with filters for time period and category-level exploration.</p></article>
+          <article class="process-step"><small>05</small><h3>Recommend</h3><p>Converted dashboard patterns into business actions around product prioritisation, territory focus, and sales planning.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="insights">
+      <div class="container">
+        <p class="slide-label reveal">slide 05 / insights</p>
+        <h2 class="reveal">What the dashboard is built to reveal.</h2>
+        <div class="insight-grid">
+          <article class="insight-card reveal"><span class="num">01</span><h3>Category dependency</h3><p>The dashboard separates high-revenue categories from smaller add-on categories, making it easier to see whether sales growth is broad-based or overly dependent on one product group.</p></article>
+          <article class="insight-card reveal"><span class="num">02</span><h3>Regional execution gaps</h3><p>Territory views help identify markets that are growing, declining, or underpenetrated, so leadership can decide where to intensify sales efforts.</p></article>
+          <article class="insight-card reveal"><span class="num">03</span><h3>Customer value patterns</h3><p>Customer and order metrics highlight whether revenue is driven by more buyers, larger orders, or repeat demand from existing customers.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="recommendations">
+      <div class="container">
+        <p class="slide-label reveal">slide 06 / recommendations</p>
+        <h2 class="reveal">Business actions suggested by the analysis.</h2>
+        <div class="recommendation-list reveal">
+          <div class="recommendation-item"><strong>Product mix</strong><p>Protect the strongest sales categories while building cross-sell bundles around accessories and complementary products.</p></div>
+          <div class="recommendation-item"><strong>Territory focus</strong><p>Use regional growth and order-volume differences to prioritise field-sales support, campaign spend, and inventory planning.</p></div>
+          <div class="recommendation-item"><strong>Forecasting rhythm</strong><p>Review sales trend views monthly so seasonality and demand shifts are caught before planning cycles become reactive.</p></div>
+          <div class="recommendation-item"><strong>Dashboard adoption</strong><p>Keep the executive overview simple, then allow deeper drilldowns for analysts who need customer, product, or territory detail.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section compact" id="next">
+      <div class="container">
+        <div class="next-project reveal">
+          <div>
+            <p class="slide-label">next case study</p>
+            <h2>Stack Overflow Developer Survey Analysis</h2>
+            <p>Explore the developer ecosystem through tools, roles, learning behaviour, and technology adoption patterns.</p>
+          </div>
+          <a class="btn primary" href="stackoverflow.html">Open next →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">▦<br><span>TOP</span></button>
+  <div class="statusbar"><span>[MODE: <b>CASE STUDY</b>]</span><span>// adventureworks</span><span>♪ data-driven decisions</span><span id="progress">0%</span></div>
+  <script src="script.js"></script>
+</body>
+</html>

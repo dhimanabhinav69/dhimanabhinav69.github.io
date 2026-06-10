@@ -9,7 +9,7 @@ window.addEventListener('mousemove', e => {
   cursor.style.top = e.clientY + 'px';
 });
 
-document.querySelectorAll('a, button, .project-card, .history-item, .education-grid article, .beyond-grid article').forEach(el => {
+document.querySelectorAll('a, button, .project-card, .history-item, .education-grid article, .beyond-grid article, .deck-card, .insight-card, .process-step, .recommendation-item, .stat-card, .case-side-panel, .next-project').forEach(el => {
   el.addEventListener('mouseenter', () => cursor && cursor.classList.add('hover'));
   el.addEventListener('mouseleave', () => cursor && cursor.classList.remove('hover'));
 });
@@ -30,7 +30,10 @@ function updateScrollState(){
   sections.forEach(section => {
     if (window.scrollY >= section.offsetTop - 190) current = section.id;
   });
-  navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + current));
+  const inPageLinks = navLinks.filter(link => (link.getAttribute('href') || '').startsWith('#'));
+  if (inPageLinks.length) {
+    inPageLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + current));
+  }
 }
 window.addEventListener('scroll', updateScrollState, { passive:true });
 updateScrollState();
