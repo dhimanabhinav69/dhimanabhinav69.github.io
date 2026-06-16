@@ -415,3 +415,31 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
   .aw-model-row b{display:block;margin-bottom:8px}
   .aw-hero-preview{padding:16px}
 }
+
+.excel-embed-frame {
+  width: 100%;
+  margin-top: 42px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.32);
+  padding: 18px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.excel-embed-frame iframe {
+  display: block;
+  width: 100%;
+  min-height: 720px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+@media (max-width: 980px) {
+  .excel-embed-frame {
+    padding: 10px;
+  }
+
+  .excel-embed-frame iframe {
+    min-height: 620px;
+  }
+}
