@@ -1,81 +1,180 @@
-<section class="case-section" id="stackoverflow-survey">
-  <div class="container">
-    <p class="slide-label reveal">case study / excel analytics</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stack Overflow Developer Survey Analysis — Abhinav Dhiman</title>
 
-    <h2 class="reveal">Stack Overflow Developer Survey Analysis</h2>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <p class="case-subtitle reveal">
-      An interactive Excel model built to analyse developer roles, programming
-      languages, salary patterns, learning behaviour, and technology adoption
-      using the Stack Overflow Developer Survey dataset.
-    </p>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
-    <div class="deck-grid">
-      <article class="deck-card featured reveal">
-        <span class="mini-label">project objective</span>
-        <h3>Turn raw survey data into clear developer ecosystem insights.</h3>
-        <p>
-          The dashboard helps users explore how developers work, what tools they
-          use, how they learn, and how experience, role, and location influence
-          professional outcomes.
+<body class="case-study-page">
+  <div class="cursor" aria-hidden="true"><span></span></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a href="index.html#home" class="brand" aria-label="Abhinav Dhiman home">
+      <span class="brand-mark">▶</span>
+      <span>portfolio</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html#home">home</a>
+      <a href="index.html#experience">experience</a>
+      <a href="index.html#education">education</a>
+      <a href="index.html#skills">skills</a>
+      <a href="index.html#work" class="active">work</a>
+      <a href="index.html#activities">activities</a>
+      <a href="index.html#contact">reach out</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero section" id="overview">
+      <div class="matrix-bg" aria-hidden="true"></div>
+
+      <div class="container case-hero-grid">
+        <div class="reveal">
+          <div class="crumb">
+            <a href="index.html#work">← back to work</a> / case study
+          </div>
+
+          <div class="case-kicker">
+            <span>Stack Overflow</span>
+            <span>Excel Analytics</span>
+            <span>Developer Survey</span>
+          </div>
+
+          <h1>Developer Survey Analysis</h1>
+
+          <p class="case-subtitle">
+            An interactive Excel model built to analyse developer roles, programming languages,
+            salary patterns, learning behaviour, and technology adoption using the Stack Overflow
+            Developer Survey dataset.
+          </p>
+
+          <div class="case-actions">
+            <a class="btn primary" href="#excel-model">Explore model</a>
+            <a class="btn secondary" href="#summary">View case study</a>
+          </div>
+
+          <div class="code-strip">
+            <span>Excel</span>
+            <span>Power Query</span>
+            <span>Pivot Tables</span>
+            <span>Slicers</span>
+            <span>Dashboard Design</span>
+          </div>
+        </div>
+
+        <aside class="case-side-panel reveal">
+          <div class="case-metric-hero">
+            <b>01</b>
+            <span>interactive Excel dashboard model</span>
+          </div>
+          <div class="case-metric-hero">
+            <b>05</b>
+            <span>analysis areas: roles, skills, salary, learning, technology</span>
+          </div>
+          <div class="case-metric-hero">
+            <b>360°</b>
+            <span>developer ecosystem exploration</span>
+          </div>
+        </aside>
+      </div>
+
+      <a class="scroll-cue" href="#summary">↘ 0x01 // summary<span>────</span></a>
+    </section>
+
+    <section class="case-section" id="summary">
+      <div class="container">
+        <p class="slide-label reveal">case study / excel analytics</p>
+
+        <div class="deck-grid">
+          <article class="deck-card featured reveal">
+            <span class="mini-label">project objective</span>
+            <h2>Turn raw survey data into clear developer ecosystem insights.</h2>
+            <p>
+              The model helps users explore how developers work, what tools they use,
+              how they learn, and how experience, role, and location influence
+              professional outcomes.
+            </p>
+          </article>
+
+          <article class="deck-card reveal">
+            <span class="mini-label">tools used</span>
+            <h3>Excel-based analytics model</h3>
+            <p>
+              Built using Microsoft Excel, Power Query, Pivot Tables, Pivot Charts,
+              slicers, data cleaning, and dashboard design.
+            </p>
+          </article>
+        </div>
+
+        <div class="stat-grid reveal">
+          <div class="stat-card">
+            <b>Roles</b>
+            <span>developer profile analysis</span>
+          </div>
+          <div class="stat-card">
+            <b>Skills</b>
+            <span>language and tool trends</span>
+          </div>
+          <div class="stat-card">
+            <b>Salary</b>
+            <span>experience comparison</span>
+          </div>
+          <div class="stat-card">
+            <b>Learning</b>
+            <span>platform preference insights</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="excel-model">
+      <div class="container">
+        <p class="slide-label reveal">interactive model</p>
+
+        <h2 class="reveal">Explore the Excel Dashboard</h2>
+
+        <p class="case-subtitle reveal">
+          The embedded workbook allows viewers to interact with slicers, charts,
+          and summary views directly from the portfolio page.
         </p>
-      </article>
 
-      <article class="deck-card reveal">
-        <span class="mini-label">tools used</span>
-        <h3>Excel-based analytics model</h3>
-        <p>
-          Built using Microsoft Excel, Power Query, Pivot Tables, Pivot Charts,
-          slicers, data cleaning, and dashboard design.
+        <div class="excel-embed-frame reveal">
+          <iframe
+            src="https://1drv.ms/x/c/860c7cae72e32374/IQRsQNVoeYzuTKPdEF4KPXHdAfo6-MxvNNGm8W9_fxwW-L8?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0"
+            width="100%"
+            height="720"
+            frameborder="0"
+            scrolling="no">
+          </iframe>
+        </div>
+
+        <p class="case-note reveal">
+          This is a public portfolio version of the workbook with sensitive or unnecessary raw data removed.
         </p>
-      </article>
-    </div>
+      </div>
+    </section>
+  </main>
 
-    <div class="stat-grid reveal">
-      <div class="stat-card">
-        <b>Roles</b>
-        <span>developer profile analysis</span>
-      </div>
-      <div class="stat-card">
-        <b>Skills</b>
-        <span>language and tool trends</span>
-      </div>
-      <div class="stat-card">
-        <b>Salary</b>
-        <span>experience-based comparison</span>
-      </div>
-      <div class="stat-card">
-        <b>Learning</b>
-        <span>platform preference insights</span>
-      </div>
-    </div>
+  <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    ▦<br><span>TOP</span>
+  </button>
+
+  <div class="statusbar">
+    <span>[MODE: <b>CASE STUDY</b>]</span>
+    <span>// stackoverflow-survey</span>
+    <span>♪ data-driven decisions</span>
+    <span id="progress">0%</span>
   </div>
-</section>
 
-<section class="case-section" id="excel-model">
-  <div class="container">
-    <p class="slide-label reveal">interactive model</p>
-
-    <h2 class="reveal">Explore the Excel Dashboard</h2>
-
-    <p class="case-subtitle reveal">
-      The embedded Excel model allows viewers to interact with slicers, charts,
-      and summary views directly from the portfolio page.
-    </p>
-
-    <div class="excel-embed-frame reveal">
-      <i
-        src="https://1drv.ms/x/c/860c7cae72e32374/IQRsQNVoeYzuTKPdEF4KPXHdAfo6-MxvNNGm8W9_fxwW-L8?em=2&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0"
-        width="100%"
-        height="720"
-        frameborder="0"
-        scrolling="no">
-      </iframe>
-    </div>
-
-    <p class="case-note reveal">
-      This is a public portfolio version of the workbook with sensitive or
-      unnecessary raw data removed.
-    </p>
-  </div>
-</section>
+  <script src="./script.js"></script>
+</body>
+</html>
