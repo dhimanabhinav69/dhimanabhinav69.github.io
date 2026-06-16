@@ -1,202 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stack Overflow Case Study — Abhinav Dhiman</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="case-study-page">
-  <div class="cursor" aria-hidden="true"><span></span></div>
-  <div class="scanlines" aria-hidden="true"></div>
+<section class="case-section" id="stackoverflow-survey">
+  <div class="container">
+    <p class="slide-label reveal">case study / excel analytics</p>
 
-  <header class="site-header" id="header">
-    <a href="index.html#home" class="brand" aria-label="Abhinav Dhiman home">
-      <span class="brand-mark">▶</span>
-      <span>portfolio</span>
-    </a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="index.html#home">home</a>
-      <a href="index.html#experience">experience</a>
-      <a href="index.html#education">education</a>
-      <a href="index.html#skills">skills</a>
-      <a href="index.html#work" class="active">work</a>
-      <a href="index.html#contact">reach out</a>
-    </nav>
-  </header>
+    <h2 class="reveal">Stack Overflow Developer Survey Analysis</h2>
 
-  <main>
-    <section class="case-hero section" id="overview">
-      <div class="matrix-bg" aria-hidden="true"></div>
-      <div class="container case-hero-grid">
-        <div class="reveal">
-          <div class="crumb"><a href="projects.html">← all projects</a> / case study 02</div>
-          <div class="case-kicker"><span>Stack Overflow</span><span>Survey Analytics</span><span>Developer Trends</span></div>
-          <h1>Developer Survey Analysis</h1>
-          <p class="case-subtitle">A case-study deck page for analysing developer roles, programming languages, tools, experience, compensation bands, learning behaviour, and AI adoption patterns from a Stack Overflow-style survey dataset.</p>
-          <div class="case-actions">
-            <a class="btn primary" href="#dashboard">View dashboard story</a>
-            <a class="btn secondary" href="#process">See analysis flow</a>
-          </div>
-          <div class="code-strip">
-            <span>Python cleaning</span><span>SQL queries</span><span>Tableau dashboard</span><span>Survey storytelling</span>
-          </div>
-        </div>
-        <aside class="case-side-panel reveal">
-          <div class="case-metric-hero"><b>01</b><span>interactive survey analysis story</span></div>
-          <div class="case-metric-hero"><b>06</b><span>themes across tools, roles, pay, learning, and AI</span></div>
-          <div class="case-metric-hero"><b>10+</b><span>dashboard views and filters for exploration</span></div>
-        </aside>
+    <p class="case-subtitle reveal">
+      An interactive Excel model built to analyse developer roles, programming
+      languages, salary patterns, learning behaviour, and technology adoption
+      using the Stack Overflow Developer Survey dataset.
+    </p>
+
+    <div class="deck-grid">
+      <article class="deck-card featured reveal">
+        <span class="mini-label">project objective</span>
+        <h3>Turn raw survey data into clear developer ecosystem insights.</h3>
+        <p>
+          The dashboard helps users explore how developers work, what tools they
+          use, how they learn, and how experience, role, and location influence
+          professional outcomes.
+        </p>
+      </article>
+
+      <article class="deck-card reveal">
+        <span class="mini-label">tools used</span>
+        <h3>Excel-based analytics model</h3>
+        <p>
+          Built using Microsoft Excel, Power Query, Pivot Tables, Pivot Charts,
+          slicers, data cleaning, and dashboard design.
+        </p>
+      </article>
+    </div>
+
+    <div class="stat-grid reveal">
+      <div class="stat-card">
+        <b>Roles</b>
+        <span>developer profile analysis</span>
       </div>
-      <a class="scroll-cue" href="#summary">↘ 0x01 // executive summary<span>────</span></a>
-    </section>
-
-    <section class="case-section" id="summary">
-      <div class="container">
-        <p class="slide-label reveal">slide 01 / executive summary</p>
-        <div class="deck-grid">
-          <article class="deck-card featured reveal">
-            <span class="mini-label">the story</span>
-            <h2>Turning survey responses into a map of the developer ecosystem.</h2>
-            <p>The project frames the survey as a market intelligence problem: recruiters, product teams, and learning platforms need to understand what developers use, how they learn, and where technology adoption is moving.</p>
-          </article>
-          <article class="deck-card reveal">
-            <span class="mini-label">what the page communicates</span>
-            <h3>Project objective</h3>
-            <p>Build a readable, interactive analysis that explains developer segments, preferred tools, career stages, compensation bands, and emerging AI usage signals.</p>
-            <ul>
-              <li>Clean multi-select survey fields into analysis-ready tables.</li>
-              <li>Profile developers by role, experience, geography, and technology usage.</li>
-              <li>Create dashboard pages that make survey data easy to explore.</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="stat-grid reveal">
-          <div class="stat-card"><b>Roles</b><span>developer persona segmentation</span></div>
-          <div class="stat-card"><b>Tools</b><span>language and platform adoption</span></div>
-          <div class="stat-card"><b>Pay</b><span>compensation band analysis</span></div>
-          <div class="stat-card"><b>AI</b><span>workflow adoption signal</span></div>
-        </div>
+      <div class="stat-card">
+        <b>Skills</b>
+        <span>language and tool trends</span>
       </div>
-    </section>
-
-    <section class="case-section" id="dashboard">
-      <div class="container">
-        <p class="slide-label reveal">slide 02 / dashboard snapshot</p>
-        <h2 class="reveal">Designed as a trend-exploration dashboard.</h2>
-        <div class="dashboard-frame reveal" aria-label="Stack Overflow dashboard visual mockup">
-          <div class="dash-top">
-            <div>
-              <span>// stackoverflow.developer_survey</span>
-              <h3>Developer Ecosystem Overview</h3>
-            </div>
-            <span>status: analysis-ready</span>
-          </div>
-          <div class="dash-kpis">
-            <div><b>64K</b><small>sample respondents view</small></div>
-            <div><b>42</b><small>technology fields mapped</small></div>
-            <div><b>06</b><small>analysis themes</small></div>
-          </div>
-          <div class="survey-grid">
-            <div class="chart-panel">
-              <div class="chart-title">most analysed technology groups</div>
-              <div class="language-cloud">
-                <span>Python</span><span>SQL</span><span>JavaScript</span><span>TypeScript</span><span>Cloud</span><span>Databases</span><span>AI Tools</span><span>Frameworks</span><span>DevOps</span>
-              </div>
-            </div>
-            <div class="chart-panel">
-              <div class="chart-title">developer segment ranking</div>
-              <div class="rank-list">
-                <div><span>01</span><i style="width:92%"></i><b>Full-stack</b></div>
-                <div><span>02</span><i style="width:78%"></i><b>Backend</b></div>
-                <div><span>03</span><i style="width:62%"></i><b>Data</b></div>
-                <div><span>04</span><i style="width:48%"></i><b>Mobile</b></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="case-note reveal">Note: the visual above is a CSS mockup created for portfolio presentation. Replace the sample values with your final survey outputs if you want the page to mirror your exact notebook or dashboard.</p>
+      <div class="stat-card">
+        <b>Salary</b>
+        <span>experience-based comparison</span>
       </div>
-    </section>
-
-    <section class="case-section" id="problem">
-      <div class="container two-col-copy">
-        <div class="reveal">
-          <p class="slide-label">slide 03 / business problem</p>
-          <h2>The analytical problem</h2>
-        </div>
-        <div class="reveal">
-          <p>Developer survey data is rich but messy. Many fields are multi-select, respondents come from different experience levels and geographies, and the same tool can appear in multiple contexts. The challenge is to create a dashboard that remains simple while preserving the depth of the survey.</p>
-          <ul class="question-list">
-            <li>Which developer roles dominate the respondent base?</li>
-            <li>Which programming languages and tools are used together?</li>
-            <li>How do experience level and compensation bands relate?</li>
-            <li>Where are developers learning: formal education, online courses, documentation, or community forums?</li>
-            <li>How visible is AI adoption across developer workflows?</li>
-          </ul>
-        </div>
+      <div class="stat-card">
+        <b>Learning</b>
+        <span>platform preference insights</span>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="case-section" id="process">
-      <div class="container">
-        <p class="slide-label reveal">slide 04 / analytical approach</p>
-        <h2 class="reveal">A survey workflow built for exploration and storytelling.</h2>
-        <div class="process-grid reveal">
-          <article class="process-step"><small>01</small><h3>Profile</h3><p>Mapped respondent demographics, role groups, professional experience, employment type, and geography into readable segments.</p></article>
-          <article class="process-step"><small>02</small><h3>Clean</h3><p>Split multi-select fields for languages, databases, platforms, frameworks, tools, and AI usage into tidy analysis tables.</p></article>
-          <article class="process-step"><small>03</small><h3>Compare</h3><p>Compared technologies across experience bands, developer roles, and compensation ranges to identify adoption patterns.</p></article>
-          <article class="process-step"><small>04</small><h3>Visualise</h3><p>Built survey views for role mix, technology adoption, learning channels, compensation distribution, and AI usage signals.</p></article>
-          <article class="process-step"><small>05</small><h3>Explain</h3><p>Converted charts into a concise narrative for recruiters, product teams, and early-career developers planning skill investments.</p></article>
-        </div>
-      </div>
-    </section>
+<section class="case-section" id="excel-model">
+  <div class="container">
+    <p class="slide-label reveal">interactive model</p>
 
-    <section class="case-section" id="insights">
-      <div class="container">
-        <p class="slide-label reveal">slide 05 / insights</p>
-        <h2 class="reveal">What the dashboard is built to reveal.</h2>
-        <div class="insight-grid">
-          <article class="insight-card reveal"><span class="num">01</span><h3>Skill clusters</h3><p>Technology selections can be grouped into skill clusters, showing which languages, databases, cloud tools, and frameworks tend to appear together.</p></article>
-          <article class="insight-card reveal"><span class="num">02</span><h3>Career-stage differences</h3><p>Experience bands help separate beginner-friendly learning signals from senior-level tool preferences, making the dashboard useful for career planning.</p></article>
-          <article class="insight-card reveal"><span class="num">03</span><h3>AI adoption context</h3><p>AI usage becomes more meaningful when compared with role type, years of experience, and workflow category rather than treated as one isolated metric.</p></article>
-        </div>
-      </div>
-    </section>
+    <h2 class="reveal">Explore the Excel Dashboard</h2>
 
-    <section class="case-section" id="recommendations">
-      <div class="container">
-        <p class="slide-label reveal">slide 06 / recommendations</p>
-        <h2 class="reveal">Business actions suggested by the analysis.</h2>
-        <div class="recommendation-list reveal">
-          <div class="recommendation-item"><strong>For recruiters</strong><p>Use role-specific technology clusters to write sharper job descriptions and avoid mixing unrelated skill requirements in one posting.</p></div>
-          <div class="recommendation-item"><strong>For learners</strong><p>Prioritise tool combinations that appear together in real developer workflows instead of studying technologies as isolated keywords.</p></div>
-          <div class="recommendation-item"><strong>For product teams</strong><p>Segment adoption by role and experience before designing developer-focused documentation, onboarding, or community programs.</p></div>
-          <div class="recommendation-item"><strong>For analysts</strong><p>Keep survey dashboards filter-first, because the same technology trend can tell different stories across geography, role, and experience.</p></div>
-        </div>
-      </div>
-    </section>
+    <p class="case-subtitle reveal">
+      The embedded Excel model allows viewers to interact with slicers, charts,
+      and summary views directly from the portfolio page.
+    </p>
 
-    <section class="case-section compact" id="next">
-      <div class="container">
-        <div class="next-project reveal">
-          <div>
-            <p class="slide-label">previous case study</p>
-            <h2>AdventureWorks Sales Performance Dashboard</h2>
-            <p>Review the sales analytics case study built around revenue, products, customers, and territory performance.</p>
-          </div>
-          <a class="btn primary" href="adventureworks.html">Open previous →</a>
-        </div>
-      </div>
-    </section>
-  </main>
+    <div class="excel-embed-frame reveal">
+      <i
+        src="https://1drv.ms/x/c/860c7cae72e32374/IQRsQNVoeYzuTKPdEF4KPXHdAfo6-MxvNNGm8W9_fxwW-L8?em=2&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0"
+        width="100%"
+        height="720"
+        frameborder="0"
+        scrolling="no">
+      </iframe>
+    </div>
 
-  <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">▦<br><span>TOP</span></button>
-  <div class="statusbar"><span>[MODE: <b>CASE STUDY</b>]</span><span>// stackoverflow</span><span>♪ developer ecosystem</span><span id="progress">0%</span></div>
-  <script src="script.js"></script>
-</body>
-</html>
+    <p class="case-note reveal">
+      This is a public portfolio version of the workbook with sensitive or
+      unnecessary raw data removed.
+    </p>
+  </div>
+</section>
