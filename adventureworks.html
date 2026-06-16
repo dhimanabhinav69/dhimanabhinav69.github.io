@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AdventureWorks Case Study — Abhinav Dhiman</title>
+  <title>AdventureWorks Power BI Case Study — Abhinav Dhiman</title>
+  <meta name="description" content="AdventureWorks Power BI portfolio case study using sales, product, customer, returns and territory analytics." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="adventureworks-case-additions.css" />
 </head>
 <body class="case-study-page">
   <div class="cursor" aria-hidden="true"><span></span></div>
@@ -24,31 +26,40 @@
       <a href="index.html#education">education</a>
       <a href="index.html#skills">skills</a>
       <a href="index.html#work" class="active">work</a>
+      <a href="index.html#activities">activities</a>
       <a href="index.html#contact">reach out</a>
     </nav>
   </header>
 
   <main>
-    <section class="case-hero section" id="overview">
+    <section class="case-hero section aw-hero" id="overview">
       <div class="matrix-bg" aria-hidden="true"></div>
       <div class="container case-hero-grid">
         <div class="reveal">
-          <div class="crumb"><a href="projects.html">← all projects</a> / case study 01</div>
-          <div class="case-kicker"><span>AdventureWorks</span><span>Sales Analytics</span><span>BI Dashboard</span></div>
-          <h1>Sales Performance Dashboard</h1>
-          <p class="case-subtitle">A portfolio-ready analytics case study showing how raw sales, product, customer, and territory data can be turned into an executive dashboard for revenue monitoring, product mix decisions, and regional sales planning.</p>
+          <div class="crumb"><a href="projects.html">← all projects</a> / case study 02</div>
+          <div class="case-kicker"><span>AdventureWorks</span><span>Power BI</span><span>Sales Analytics</span></div>
+          <h1>AdventureWorks Sales Performance Dashboards</h1>
+          <p class="case-subtitle">A portfolio-ready Power BI case study turning AdventureWorks sales, product, customer, returns, and territory data into executive reporting pages for performance monitoring and business decisions.</p>
           <div class="case-actions">
-            <a class="btn primary" href="#dashboard">View dashboard story</a>
+            <a class="btn primary" href="#dashboard">View dashboard pages</a>
             <a class="btn secondary" href="#process">See analysis flow</a>
           </div>
           <div class="code-strip">
-            <span>SQL model</span><span>Power BI / Excel</span><span>KPI storytelling</span><span>Business recommendations</span>
+            <span>Power BI</span><span>DAX measures</span><span>data modelling</span><span>dashboard storytelling</span>
           </div>
         </div>
-        <aside class="case-side-panel reveal">
-          <div class="case-metric-hero"><b>01</b><span>single-page deck style case study</span></div>
-          <div class="case-metric-hero"><b>05</b><span>business questions translated into dashboard sections</span></div>
-          <div class="case-metric-hero"><b>08+</b><span>KPIs across revenue, customers, products, and territories</span></div>
+
+        <aside class="aw-hero-preview reveal" aria-label="AdventureWorks Power BI dashboard preview">
+          <div class="aw-screen">
+            <div class="aw-screen-bar"><span>// exec.dashboard</span><span class="aw-dots"><i></i><i></i><i></i></span></div>
+            <img src="assets/adventureworks-exec-dashboard.png" alt="AdventureWorks executive dashboard with revenue, profit, orders, return rate, weekly revenue trend, orders by category and top products." />
+          </div>
+          <div class="aw-preview-metrics" aria-label="Dashboard KPI summary">
+            <div><b>$24.9M</b><span>Total Revenue</span></div>
+            <div><b>$10.5M</b><span>Total Profit</span></div>
+            <div><b>25K</b><span>Total Orders</span></div>
+            <div><b>2.2%</b><span>Return Rate</span></div>
+          </div>
         </aside>
       </div>
       <a class="scroll-cue" href="#summary">↘ 0x01 // executive summary<span>────</span></a>
@@ -60,81 +71,89 @@
         <div class="deck-grid">
           <article class="deck-card featured reveal">
             <span class="mini-label">the story</span>
-            <h2>From transaction data to boardroom clarity.</h2>
-            <p>The project frames AdventureWorks as a sales leadership problem: leaders need a clean way to monitor revenue performance, understand what is driving growth, and quickly spot categories, regions, or customer segments that need attention.</p>
+            <h2>From sales transactions to stakeholder-ready insight.</h2>
+            <p>The dashboard frames AdventureWorks as a sales leadership problem: decision makers need a clean way to track revenue, profit, orders, customers, territories, product mix, and returns without manually comparing disconnected tables.</p>
           </article>
           <article class="deck-card reveal">
-            <span class="mini-label">what the page communicates</span>
-            <h3>Project objective</h3>
-            <p>Build a dashboard narrative that helps a stakeholder answer: where are we growing, which products are strongest, which regions need support, and what actions should the business take next?</p>
+            <span class="mini-label">project objective</span>
+            <h3>What this report answers</h3>
+            <p>Where is revenue moving? Which categories and products are driving demand? Which countries generate the most orders? Which customers create the most value? Which product areas need return-rate attention?</p>
             <ul>
-              <li>Convert raw tables into a reusable analytics model.</li>
-              <li>Create KPI views for sales, customers, territories, and products.</li>
-              <li>Translate trends into clear business recommendations.</li>
+              <li>Build an executive overview for fast KPI monitoring.</li>
+              <li>Create drill-through pages for product and customer analysis.</li>
+              <li>Use map, slicer, and tooltip pages for interactive exploration.</li>
             </ul>
           </article>
         </div>
 
-        <div class="stat-grid reveal">
-          <div class="stat-card"><b>Revenue</b><span>primary performance metric</span></div>
-          <div class="stat-card"><b>Orders</b><span>demand and volume tracking</span></div>
-          <div class="stat-card"><b>AOV</b><span>basket-size quality signal</span></div>
-          <div class="stat-card"><b>YoY</b><span>growth direction by period</span></div>
+        <div class="aw-metric-strip reveal">
+          <div><b>$24.9M</b><span>Total Revenue</span></div>
+          <div><b>$10.5M</b><span>Total Profit</span></div>
+          <div><b>25,164</b><span>Total Orders</span></div>
+          <div><b>1,809</b><span>Total Returns</span></div>
+          <div><b>17K</b><span>Total Customers</span></div>
         </div>
       </div>
     </section>
 
     <section class="case-section" id="dashboard">
       <div class="container">
-        <p class="slide-label reveal">slide 02 / dashboard snapshot</p>
-        <h2 class="reveal">Designed like an executive sales cockpit.</h2>
-        <div class="dashboard-frame reveal" aria-label="AdventureWorks dashboard visual mockup">
-          <div class="dash-top">
+        <p class="slide-label reveal">slide 02 / main dashboard</p>
+        <h2 class="reveal">Executive sales cockpit.</h2>
+        <article class="aw-image-showcase featured reveal">
+          <div class="aw-image-wrap">
+            <img src="assets/adventureworks-exec-dashboard.png" alt="AdventureWorks executive Power BI dashboard showing KPI cards, weekly revenue, orders by category, top products and monthly metrics." />
+          </div>
+          <div class="aw-shot-caption">
             <div>
-              <span>// adventureworks.sales_performance</span>
-              <h3>Executive Overview</h3>
+              <h3>Exec Dashboard</h3>
+              <p>This page gives leadership one clean view of total revenue, total profit, total orders, return rate, weekly revenue trend, category orders, top product performance, monthly revenue, monthly orders, and monthly returns.</p>
             </div>
-            <span>status: stakeholder-ready</span>
+            <span class="aw-badge blue">overview</span>
           </div>
-          <div class="dash-kpis">
-            <div><b>$29M</b><small>sample revenue view</small></div>
-            <div><b>25K</b><small>sample orders view</small></div>
-            <div><b>+12%</b><small>growth signal view</small></div>
-          </div>
-          <div class="dash-body">
-            <div class="chart-panel">
-              <div class="chart-title">monthly revenue trend</div>
-              <div class="bars"><i style="height:42%"></i><i style="height:55%"></i><i style="height:38%"></i><i style="height:69%"></i><i style="height:63%"></i><i style="height:78%"></i><i style="height:70%"></i><i style="height:86%"></i><i style="height:74%"></i><i style="height:92%"></i></div>
-            </div>
-            <div class="chart-panel">
-              <div class="chart-title">category contribution</div>
-              <div class="donut"></div>
-              <div class="legend">
-                <span><i></i>Bikes — core revenue engine</span>
-                <span><i></i>Accessories — add-on opportunity</span>
-                <span><i></i>Clothing / components — margin watchlist</span>
-              </div>
-            </div>
-          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section" id="pages">
+      <div class="container">
+        <p class="slide-label reveal">slide 03 / report pages</p>
+        <h2 class="reveal">Dashboard pages converted into a portfolio story.</h2>
+        <div class="aw-page-grid">
+          <article class="aw-page-card reveal">
+            <div class="aw-image-wrap"><img src="assets/adventureworks-map.png" alt="AdventureWorks Power BI map showing total orders by country with region buttons." /></div>
+            <div class="aw-shot-caption"><h3>Map View</h3><p>Country-level order distribution with region buttons for Europe, North America, and Pacific. Useful for territory planning and market concentration checks.</p></div>
+          </article>
+          <article class="aw-page-card reveal">
+            <div class="aw-image-wrap"><img src="assets/adventureworks-product-detail.png" alt="AdventureWorks product detail report page with product selection, target gauges, adjusted profit and returns trend charts." /></div>
+            <div class="aw-shot-caption"><h3>Product Detail</h3><p>Product drill-through page showing order, revenue, and profit target gauges, price adjustment, adjusted profit trend, and selected product metrics.</p></div>
+          </article>
+          <article class="aw-page-card reveal">
+            <div class="aw-image-wrap"><img src="assets/adventureworks-customer-detail.png" alt="AdventureWorks customer detail page showing customers, average revenue per customer, customer mix, top customers and selected customer details." /></div>
+            <div class="aw-shot-caption"><h3>Customer Detail</h3><p>Customer analytics page for total customers, average revenue per customer, occupation mix, gender mix, top customers by orders, year slicers, and highest revenue customer.</p></div>
+          </article>
+          <article class="aw-page-card reveal">
+            <div class="aw-image-wrap"><img src="assets/adventureworks-tooltip.png" alt="AdventureWorks Power BI tooltip page showing total orders, profit, revenue, returns and orders by day." /></div>
+            <div class="aw-shot-caption"><h3>Tooltip Page</h3><p>Custom tooltip report page that gives compact context on total orders, profit, revenue, returns, and order movement over time.</p></div>
+          </article>
         </div>
-        <p class="case-note reveal">Note: the visual above is a CSS mockup created for portfolio presentation. Replace the sample values with your final dashboard numbers if you want the page to mirror your exact analysis.</p>
       </div>
     </section>
 
     <section class="case-section" id="problem">
       <div class="container two-col-copy">
         <div class="reveal">
-          <p class="slide-label">slide 03 / business problem</p>
+          <p class="slide-label">slide 04 / business problem</p>
           <h2>The stakeholder problem</h2>
         </div>
         <div class="reveal">
-          <p>Sales performance was spread across multiple dimensions: products, customers, geography, dates, and order channels. Without a structured dashboard, a stakeholder would spend too much time switching between raw tables and manually comparing slices of performance.</p>
+          <p>AdventureWorks performance sits across product, customer, geography, calendar, sales, and returns tables. Without a structured report, stakeholders would need to manually compare separate views to understand growth, product demand, customer quality, regional concentration, and operational issues.</p>
           <ul class="question-list">
-            <li>Which product categories are contributing most to sales?</li>
-            <li>Which territories show growth, stagnation, or underperformance?</li>
-            <li>How are customers behaving across order volume and average order value?</li>
-            <li>Which monthly patterns should sales leadership prepare for?</li>
-            <li>Where should the business focus next: acquisition, product mix, or regional execution?</li>
+            <li>Which product categories are generating the most order volume?</li>
+            <li>Which countries and regions are contributing most to total orders?</li>
+            <li>Which products are meeting or missing order, revenue, and profit targets?</li>
+            <li>Which customers contribute the most orders and revenue?</li>
+            <li>Where should leadership focus next: product mix, territory execution, customer value, or returns reduction?</li>
           </ul>
         </div>
       </div>
@@ -142,59 +161,74 @@
 
     <section class="case-section" id="process">
       <div class="container">
-        <p class="slide-label reveal">slide 04 / analytical approach</p>
-        <h2 class="reveal">A clean pipeline from raw data to decision-ready insight.</h2>
+        <p class="slide-label reveal">slide 05 / analytical approach</p>
+        <h2 class="reveal">A clean BI pipeline from raw data to decision-ready reporting.</h2>
         <div class="process-grid reveal">
-          <article class="process-step"><small>01</small><h3>Understand</h3><p>Defined the core business questions before choosing charts, so the dashboard would answer decision needs instead of just displaying data.</p></article>
-          <article class="process-step"><small>02</small><h3>Model</h3><p>Structured sales, product, customer, territory, and date tables into a simple star-schema style reporting model.</p></article>
-          <article class="process-step"><small>03</small><h3>Measure</h3><p>Built KPI logic for revenue, orders, average order value, customer count, growth, and category contribution.</p></article>
-          <article class="process-step"><small>04</small><h3>Visualise</h3><p>Created executive, product, region, and customer views with filters for time period and category-level exploration.</p></article>
-          <article class="process-step"><small>05</small><h3>Recommend</h3><p>Converted dashboard patterns into business actions around product prioritisation, territory focus, and sales planning.</p></article>
+          <article class="process-step"><small>01</small><h3>Understand</h3><p>Defined the key business questions before choosing visuals so each dashboard page serves a decision-making purpose.</p></article>
+          <article class="process-step"><small>02</small><h3>Model</h3><p>Structured sales, returns, product, customer, territory, and date tables into a reporting model for cross-filtering.</p></article>
+          <article class="process-step"><small>03</small><h3>Measure</h3><p>Created DAX measures for revenue, profit, orders, returns, return rate, customer count, monthly changes, and targets.</p></article>
+          <article class="process-step"><small>04</small><h3>Visualise</h3><p>Designed executive, map, product, customer, and tooltip pages using consistent navigation, slicers, and drill-through logic.</p></article>
+          <article class="process-step"><small>05</small><h3>Recommend</h3><p>Translated dashboard patterns into actions for product mix, territory focus, customer value, and returns monitoring.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="model">
+      <div class="container two-col-copy">
+        <div class="reveal">
+          <p class="slide-label">slide 06 / data model</p>
+          <h2>Data model and report logic</h2>
+          <p>The model uses fact-style sales and returns data with supporting lookup tables for calendar, customer, product, category, territory, and measures.</p>
+        </div>
+        <div class="aw-model-list reveal">
+          <div class="aw-model-row"><b>Sales Data</b><span>Order quantity, revenue, product keys, customer keys, and transactional performance.</span></div>
+          <div class="aw-model-row"><b>Returns Data</b><span>Return volume and return-rate logic for product and category monitoring.</span></div>
+          <div class="aw-model-row"><b>Product Lookup</b><span>Product names, subcategories, categories, and drill-through selection.</span></div>
+          <div class="aw-model-row"><b>Customer Lookup</b><span>Customer profile, occupation, gender, order behaviour, and revenue contribution.</span></div>
+          <div class="aw-model-row"><b>Territory Lookup</b><span>Country and region fields supporting the map and regional slicer buttons.</span></div>
+          <div class="aw-model-row"><b>Calendar Lookup</b><span>Weekly and monthly trend analysis across 2020, 2021, and 2022.</span></div>
+          <div class="aw-model-row"><b>Measure Table</b><span>Centralized DAX KPIs for revenue, profit, orders, returns, targets, and selected metrics.</span></div>
         </div>
       </div>
     </section>
 
     <section class="case-section" id="insights">
       <div class="container">
-        <p class="slide-label reveal">slide 05 / insights</p>
+        <p class="slide-label reveal">slide 07 / insights</p>
         <h2 class="reveal">What the dashboard is built to reveal.</h2>
         <div class="insight-grid">
-          <article class="insight-card reveal"><span class="num">01</span><h3>Category dependency</h3><p>The dashboard separates high-revenue categories from smaller add-on categories, making it easier to see whether sales growth is broad-based or overly dependent on one product group.</p></article>
-          <article class="insight-card reveal"><span class="num">02</span><h3>Regional execution gaps</h3><p>Territory views help identify markets that are growing, declining, or underpenetrated, so leadership can decide where to intensify sales efforts.</p></article>
-          <article class="insight-card reveal"><span class="num">03</span><h3>Customer value patterns</h3><p>Customer and order metrics highlight whether revenue is driven by more buyers, larger orders, or repeat demand from existing customers.</p></article>
+          <article class="insight-card reveal"><span class="num">01</span><h3>Revenue momentum</h3><p>The weekly revenue view highlights growth direction and makes it easy to see when sales acceleration becomes visible.</p></article>
+          <article class="insight-card reveal"><span class="num">02</span><h3>Product dependency</h3><p>Category and top-product views separate high-volume product groups from smaller categories, helping leadership understand demand concentration.</p></article>
+          <article class="insight-card reveal"><span class="num">03</span><h3>Regional concentration</h3><p>The country map makes order concentration visible so regional campaigns, inventory, and sales planning can be targeted more precisely.</p></article>
         </div>
       </div>
     </section>
 
     <section class="case-section" id="recommendations">
       <div class="container">
-        <p class="slide-label reveal">slide 06 / recommendations</p>
+        <p class="slide-label reveal">slide 08 / recommendations</p>
         <h2 class="reveal">Business actions suggested by the analysis.</h2>
         <div class="recommendation-list reveal">
-          <div class="recommendation-item"><strong>Product mix</strong><p>Protect the strongest sales categories while building cross-sell bundles around accessories and complementary products.</p></div>
-          <div class="recommendation-item"><strong>Territory focus</strong><p>Use regional growth and order-volume differences to prioritise field-sales support, campaign spend, and inventory planning.</p></div>
-          <div class="recommendation-item"><strong>Forecasting rhythm</strong><p>Review sales trend views monthly so seasonality and demand shifts are caught before planning cycles become reactive.</p></div>
-          <div class="recommendation-item"><strong>Dashboard adoption</strong><p>Keep the executive overview simple, then allow deeper drilldowns for analysts who need customer, product, or territory detail.</p></div>
+          <div class="recommendation-item"><strong>Product mix</strong><p>Protect the strongest order categories and build cross-sell bundles around accessories, tires, tubes, helmets, and complementary products.</p></div>
+          <div class="recommendation-item"><strong>Territory focus</strong><p>Use the map view to prioritize sales campaigns, field support, stock allocation, and regional growth planning.</p></div>
+          <div class="recommendation-item"><strong>Returns watch</strong><p>Monitor return rate by product and subcategory to identify potential quality, fulfillment, sizing, or expectation gaps.</p></div>
+          <div class="recommendation-item"><strong>Executive rhythm</strong><p>Review weekly and monthly dashboard pages regularly so the business reacts early to demand shifts instead of waiting for quarter-end reporting.</p></div>
         </div>
-      </div>
-    </section>
 
-    <section class="case-section compact" id="next">
-      <div class="container">
-        <div class="next-project reveal">
+        <div class="aw-link-card reveal">
           <div>
-            <p class="slide-label">next case study</p>
-            <h2>Stack Overflow Developer Survey Analysis</h2>
-            <p>Explore the developer ecosystem through tools, roles, learning behaviour, and technology adoption patterns.</p>
+            <p class="slide-label">final frame</p>
+            <h2>Ready to add to the portfolio work section.</h2>
+            <p>Use this page as the AdventureWorks project detail page and connect the project card button to <strong>adventureworks.html</strong>.</p>
           </div>
-          <a class="btn primary" href="stackoverflow.html">Open next →</a>
+          <a class="btn secondary" href="projects.html">Back to projects →</a>
         </div>
       </div>
     </section>
   </main>
 
   <button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">▦<br><span>TOP</span></button>
-  <div class="statusbar"><span>[MODE: <b>CASE STUDY</b>]</span><span>// adventureworks</span><span>♪ data-driven decisions</span><span id="progress">0%</span></div>
+  <div class="statusbar"><span>[MODE: <b>CASE STUDY</b>]</span><span>// adventureworks.powerbi</span><span>♪ data-driven decisions</span><span id="progress">0%</span></div>
   <script src="script.js"></script>
 </body>
 </html>
