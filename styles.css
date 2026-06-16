@@ -319,3 +319,99 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
     min-height: 160px;
   }
 }
+
+/* AdventureWorks Power BI case page additions — designed to sit on top of the existing portfolio CSS */
+.case-study-page .nav a[href="index.html#work"]{color:#111}
+.aw-hero-preview{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.28);
+  padding:24px;
+  position:relative;
+  box-shadow:0 24px 70px rgba(0,0,0,.045);
+}
+.aw-hero-preview:before{
+  content:"// powerbi.report.preview";
+  position:absolute;
+  top:-13px;
+  left:20px;
+  background:var(--bg);
+  padding:0 8px;
+  font:700 11px var(--mono);
+  letter-spacing:.08em;
+  color:#888;
+}
+.aw-screen{
+  border:1px solid #1f1f1f;
+  background:#111;
+  overflow:hidden;
+}
+.aw-screen-bar{
+  height:32px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 12px;
+  background:#171717;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  color:#aaa;
+  font:600 10px var(--mono);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.aw-dots{display:flex;gap:7px;align-items:center}
+.aw-dots i{width:8px;height:8px;border-radius:50%;display:block;background:#747474}
+.aw-dots i:nth-child(2){background:#999}.aw-dots i:nth-child(3){background:#20ddd8}
+.aw-screen img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top left;background:#fff}
+.aw-preview-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--line);background:var(--line);margin-top:18px}
+.aw-preview-metrics div{background:var(--bg);padding:16px 12px;min-height:94px}
+.aw-preview-metrics b{display:block;color:#111;font-size:28px;line-height:1;letter-spacing:-.06em;font-weight:800}
+.aw-preview-metrics span{display:block;margin-top:8px;font:700 10px/1.5 var(--mono);color:#777;text-transform:uppercase}
+.aw-image-showcase{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.22);
+  padding:22px;
+  position:relative;
+}
+.aw-image-showcase.featured{padding:28px;background:rgba(255,255,255,.30)}
+.aw-image-wrap{border:1px solid #1d1d1d;background:#111;overflow:hidden;position:relative}
+.aw-image-wrap img{display:block;width:100%;height:auto;background:#fff}
+.aw-image-wrap:after{
+  content:"dashboard screenshot";
+  position:absolute;
+  right:12px;
+  bottom:12px;
+  padding:7px 9px;
+  background:#111;
+  color:#fff;
+  font:700 10px var(--mono);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  opacity:.86;
+}
+.aw-shot-caption{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding-top:18px}
+.aw-shot-caption h3{margin:0 0 8px}
+.aw-shot-caption p{margin:0;color:#606060;line-height:1.75}
+.aw-badge{font:700 11px var(--mono);color:#fff;background:#777;padding:7px 9px;white-space:nowrap;text-transform:uppercase}
+.aw-badge.blue{background:var(--blue)}.aw-badge.black{background:#111}.aw-badge.orange{background:var(--orange)}
+.aw-page-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:34px}
+.aw-page-card{border:1px solid var(--line);background:rgba(255,255,255,.22);padding:18px;transition:.25s ease}
+.aw-page-card:hover{transform:translateY(-5px);border-color:var(--blue);box-shadow:0 20px 55px rgba(0,0,0,.06)}
+.aw-page-card .aw-image-wrap img{aspect-ratio:16/9;object-fit:cover;object-position:top left}
+.aw-page-card .aw-shot-caption{display:block;padding-top:16px}
+.aw-page-card .aw-shot-caption p{font-size:14px}
+.aw-metric-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;border:1px solid var(--line);background:var(--line);margin-top:36px}
+.aw-metric-strip div{background:var(--bg);padding:24px 18px}
+.aw-metric-strip b{display:block;font-size:30px;line-height:1;letter-spacing:-.06em}.aw-metric-strip span{display:block;margin-top:10px;font:700 10px/1.55 var(--mono);color:#777;text-transform:uppercase}
+.aw-model-list{border:1px solid var(--line);background:rgba(255,255,255,.20)}
+.aw-model-row{display:grid;grid-template-columns:210px 1fr;gap:24px;padding:20px 22px;border-bottom:1px solid var(--line)}
+.aw-model-row:last-child{border-bottom:0}.aw-model-row b{font:800 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#111}.aw-model-row span{color:#666;line-height:1.65}
+.aw-link-card{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;border:1px solid var(--line);background:#111;color:#fff;padding:34px;margin-top:34px}
+.aw-link-card h2{color:#fff;margin-bottom:8px}.aw-link-card p{color:#cfcfcf;margin:0}.aw-link-card .btn.secondary{color:#fff;border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.04)}
+.aw-small-note{font:600 12px var(--mono);color:#888;margin-top:16px;line-height:1.7}
+@media(max-width:980px){
+  .aw-preview-metrics,.aw-metric-strip,.aw-page-grid{grid-template-columns:1fr}
+  .aw-shot-caption,.aw-link-card,.aw-model-row{display:block}
+  .aw-shot-caption .aw-badge{display:inline-block;margin-top:14px}
+  .aw-model-row b{display:block;margin-bottom:8px}
+  .aw-hero-preview{padding:16px}
+}
