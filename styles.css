@@ -473,6 +473,7 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .projects .visual img {
@@ -508,4 +509,8 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
   .projects .project-grid {
     grid-template-columns: 1fr !important;
   }
+}
+
+.projects .visual::after {
+  display: none !important;
 }
