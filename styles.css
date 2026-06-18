@@ -444,24 +444,30 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
   }
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+/* Final fix for project cards and images */
+.projects .project-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 24px !important;
   align-items: stretch;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.project-card {
+.projects .project-card {
   width: 100%;
+  max-width: 100%;
   min-width: 0;
   overflow: hidden;
   border: 1px solid #e5e5e5;
   background: #fff;
 }
 
-.visual {
+.projects .visual {
   width: 100%;
-  height: 240px;
+  max-width: 100%;
+  height: 220px;
   overflow: hidden;
   background: #111827;
   display: flex;
@@ -469,22 +475,37 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
   justify-content: center;
 }
 
-.visual img {
+.projects .visual img {
+  display: block;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: contain;
-background: #f5f5f5;
-  display: block;
+  object-position: center;
+  background: #f5f5f5;
 }
 
+/* Prevent text/image from forcing grid wider */
+.projects .project-card,
+.projects .project-card * {
+  min-width: 0;
+}
+
+.projects .project-info h3,
+.projects .project-info p {
+  overflow-wrap: break-word;
+}
+
+/* Tablet */
 @media (max-width: 992px) {
-  .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .projects .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
 
+/* Mobile */
 @media (max-width: 600px) {
-  .project-grid {
-    grid-template-columns: 1fr;
+  .projects .project-grid {
+    grid-template-columns: 1fr !important;
   }
 }
