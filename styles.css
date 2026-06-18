@@ -514,3 +514,24 @@ body:before{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;bac
 .projects .visual::after {
   display: none !important;
 }
+
+/* Remove blue haze/glow from project visuals */
+.projects .project-card .visual,
+.project-card .visual,
+.visual {
+  background: #111 !important;
+  background-image: none !important;
+}
+
+.projects .project-card .visual::after,
+.projects .project-card .visual:after,
+.project-card .visual::after,
+.project-card .visual:after,
+.visual::after,
+.visual:after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+  opacity: 0 !important;
+}
